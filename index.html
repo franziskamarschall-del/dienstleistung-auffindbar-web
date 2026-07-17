@@ -44,9 +44,9 @@
   },
   "knowsAbout": ["Lokales SEO", "Google Unternehmensprofil", "Google Bewertungen", "KI-Sichtbarkeit", "Local Search"],
   "sameAs": [
-    "https://www.linkedin.com/company/136166220/",
+    "https://www.linkedin.com/company/dienstleistung-auffindbar/",
     "https://www.instagram.com/dienstleistung.auffindbar/",
-    "https://www.facebook.com/profile.php?id=61591913520821"
+    "https://www.facebook.com/dienstleistung.auffindbar/"
   ],
   "makesOffer": {
     "@type": "Offer",
@@ -67,7 +67,7 @@
     {
       "@type": "Question",
       "name": "Was ist ein Sichtbarkeits-Check?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Der kostenlose Sichtbarkeits-Check zeigt anhand von fünf konkreten Befunden, wie gut ein Unternehmen bei Google gefunden wird: Position in der lokalen Suche, Zustand des Google-Unternehmensprofils, Bewertungslage, Website-Auffindbarkeit und Sichtbarkeit gegenüber der Konkurrenz. Kein Verkaufsgespräch, keine Verpflichtung."}
+      "acceptedAnswer": {"@type": "Answer", "text": "Der kostenlose Sichtbarkeits-Check zeigt anhand von fünf konkreten Befunden, wie gut Ihr Unternehmen bei Google gefunden wird: Position in der lokalen Suche, Zustand des Google-Unternehmensprofils, Bewertungslage, Website-Auffindbarkeit und Sichtbarkeit gegenüber der Konkurrenz. Kein Verkaufsgespräch, keine Verpflichtung."}
     },
     {
       "@type": "Question",
@@ -77,7 +77,7 @@
     {
       "@type": "Question",
       "name": "Ich bekomme schon Kunden über Empfehlungen. Brauche ich Google trotzdem?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Empfohlene Kunden googeln ein Unternehmen, bevor sie anrufen. Finden sie ein leeres Profil ohne Bewertungen, verpufft ein Teil der Empfehlung. Google ersetzt Empfehlungen nicht – es verhindert, dass sie auf dem Weg verloren gehen."}
+      "acceptedAnswer": {"@type": "Answer", "text": "Empfohlene Kunden googeln Sie, bevor sie anrufen. Finden sie ein leeres Profil ohne Bewertungen, verpufft ein Teil der Empfehlung. Google ersetzt Empfehlungen nicht – es verhindert, dass sie auf dem Weg zu Ihnen verloren gehen."}
     },
     {
       "@type": "Question",
@@ -86,18 +86,18 @@
     },
     {
       "@type": "Question",
-      "name": "Wie schnell sehe ich Ergebnisse bei lokalem SEO?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Erste Bewegung im Google-Profil zeigt sich oft nach wenigen Wochen, spürbar mehr Anfragen sind realistisch nach drei bis sechs Monaten. Schnellere Versprechen sollte man grundsätzlich hinterfragen."}
+      "name": "Wie schnell sehe ich Ergebnisse?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Erste Bewegung im Google-Profil oft nach wenigen Wochen, spürbar mehr Anfragen realistisch nach 3–6 Monaten. Schnellere Versprechen sollten Sie grundsätzlich hinterfragen."}
     },
     {
       "@type": "Question",
-      "name": "Was kostet die Zusammenarbeit?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Aktuell ist alles kostenlos: der Sichtbarkeits-Check und die regelmäßigen SEO-Tipps auf LinkedIn, Instagram und Facebook. Bezahlte Festpreis-Pakete folgen zu einem späteren Zeitpunkt – ohne Laufzeitverträge und ohne Abo-Zwang."}
+      "name": "Was kostet das?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Aktuell: nichts. Der Sichtbarkeits-Check und die regelmäßigen Tipps auf LinkedIn, Instagram und Facebook sind kostenlos. Bezahlte Festpreis-Pakete folgen zu einem späteren Zeitpunkt – ohne Laufzeitverträge, ohne Abo-Zwang. Wer die Tipps verfolgt, erfährt es dort zuerst."}
     },
     {
       "@type": "Question",
       "name": "Arbeitest du auch mit Unternehmen außerhalb von Stuttgart?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Der Fokus liegt auf Stuttgart und der Region, weil lokales SEO vom Verständnis des lokalen Markts lebt. Im Umkreis – Rems-Murr-Kreis, Ludwigsburg, Esslingen, Böblingen – ist jedes Dienstleistungsunternehmen richtig."}
+      "acceptedAnswer": {"@type": "Answer", "text": "Mein Fokus ist Stuttgart und die Region – weil lokales SEO vom Verständnis des lokalen Markts lebt. Im Umkreis (Rems-Murr-Kreis, Ludwigsburg, Esslingen, Böblingen) sind Sie richtig."}
     },
     {
       "@type": "Question",
@@ -175,9 +175,15 @@
   .nav-cta{
     font-size:14px; font-weight:600; color:#fff !important;
     background:var(--ink); padding:11px 22px; border-radius:100px; transition:background .2s;
+    white-space:nowrap; flex:none;
   }
   .nav-cta:hover{ background:var(--ember); }
   @media(max-width:900px){ .nav-links a:not(.nav-cta){ display:none; } .nav-social{ display:none; } }
+  @media(max-width:480px){
+    .nav{ flex-wrap:wrap; height:auto; padding:12px 0; row-gap:10px; }
+    .nav-links{ width:100%; justify-content:flex-end; }
+    .logo-sub{ display:none; }
+  }
 
   /* ---------- Hero ---------- */
   .hero{ padding:96px 0 100px; position:relative; overflow:hidden; }
@@ -256,7 +262,6 @@
 
   /* ---------- Social / Tipps ---------- */
   .tips-grid{ margin-top:56px; display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
-  .tips-grid.single{ grid-template-columns:1fr; max-width:360px; }
   .tip-card{
     background:var(--paper); border:1px solid var(--rule); border-radius:16px;
     padding:32px 28px; text-decoration:none; color:var(--ink);
@@ -321,7 +326,7 @@
   .form-field{ margin-bottom:18px; display:flex; flex-direction:column; gap:7px; }
   .form-field label{ font-size:13.5px; font-weight:600; color:rgba(255,255,255,.85); }
   .form-field input, .form-field textarea{
-    font-family:inherit; font-size:15px; color:var(--ink);
+    font-family:inherit; font-size:16px; color:var(--ink);
     background:#fff; border:1px solid transparent; border-radius:10px;
     padding:12px 14px; resize:vertical;
   }
@@ -392,15 +397,15 @@
       <a href="#faq">FAQ</a>
       <a href="#check" class="nav-cta">Kostenloser Sichtbarkeits-Check</a>
     </nav>
-    <!-- Nur Instagram ist aktuell live. LinkedIn folgt, Facebook wird vorerst nicht bespielt. -->
+    <!-- TODO: Social-URLs durch echte Profile ersetzen -->
     <div class="nav-social">
-      <a href="https://www.linkedin.com/company/136166220/" aria-label="LinkedIn" rel="me">
+      <a href="https://www.linkedin.com/company/dienstleistung-auffindbar/" aria-label="LinkedIn" rel="me">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
       </a>
       <a href="https://www.instagram.com/dienstleistung.auffindbar/" aria-label="Instagram" rel="me">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor" stroke="none"/></svg>
       </a>
-      <a href="https://www.facebook.com/profile.php?id=61591913520821" aria-label="Facebook" rel="me">
+      <a href="https://www.facebook.com/dienstleistung.auffindbar/" aria-label="Facebook" rel="me">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.54-1.5h1.66V3.6c-.29-.04-1.27-.12-2.42-.12-2.4 0-4.04 1.46-4.04 4.15v2.27H7.5V13h2.74v8h3.26z"/></svg>
       </a>
     </div>
@@ -433,8 +438,7 @@
       </p>
     </div>
     <div class="hero-media">
-      <!-- Querformat-Bild hier einsetzen: <img src="dein-bild.jpg" alt="Franziska Marschall, Spezialistin für lokales SEO in Stuttgart"> -->
-      <div class="placeholder">Querformat-Bild<br>ca. 1600 × 1100 px</div>
+      <img src="franziska-marschall.jpg" alt="Franziska Marschall, Spezialistin für lokales SEO in Stuttgart" width="1250" height="884" loading="eager" fetchpriority="high">
     </div>
   </div>
 </section>
@@ -462,8 +466,9 @@
       <h2>SEO-Tipps, die Sie sofort umsetzen können.</h2>
       <p class="lede">Zweimal pro Woche zeige ich, wie Dienstleister in Stuttgart &amp; Region ihre Google-Sichtbarkeit selbst verbessern: Google-Unternehmensprofil, Bewertungen, Website-Quick-Wins, KI-Suche. Konkret, ehrlich, ohne Verkaufsmasche – folgen Sie mir auf dem Kanal, den Sie ohnehin nutzen:</p>
     </div>
+    <!-- TODO: Social-URLs durch echte Profile ersetzen -->
     <div class="tips-grid reveal">
-      <a class="tip-card" href="https://www.linkedin.com/company/136166220/">
+      <a class="tip-card" href="https://www.linkedin.com/company/dienstleistung-auffindbar/">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
         <h3>LinkedIn</h3>
         <p>Der Hauptkanal: Tipps, Klartext-Meinungen und Einblicke für Kanzleien, Praxen und Unternehmer – jeden Dienstag und Freitag.</p>
@@ -475,7 +480,7 @@
         <p>Dieselben Tipps im schnellen Format – zum Speichern und Nachmachen zwischen zwei Terminen.</p>
         <span class="handle">@dienstleistung.auffindbar →</span>
       </a>
-      <a class="tip-card" href="https://www.facebook.com/profile.php?id=61591913520821">
+      <a class="tip-card" href="https://www.facebook.com/dienstleistung.auffindbar/">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.54-1.5h1.66V3.6c-.29-.04-1.27-.12-2.42-.12-2.4 0-4.04 1.46-4.04 4.15v2.27H7.5V13h2.74v8h3.26z"/></svg>
         <h3>Facebook</h3>
         <p>Alle Inhalte auch hier – für alle, die Facebook täglich nutzen.</p>
@@ -580,7 +585,7 @@
     <p>Schicken Sie mir Ihren Firmennamen – Sie bekommen fünf konkrete Befunde zu Ihrer Google-Sichtbarkeit: Wo Sie stehen, was fehlt, was Sie selbst sofort verbessern können. Kostenlos, ohne Verpflichtung, ohne Verkaufsgespräch.</p>
     <div class="btn-row">
       <!-- TODO: WhatsApp-Nummer eintragen -->
-      <a class="btn btn-white" href="https://wa.me/49XXXXXXXXXXX?text=Hallo%2C%20ich%20m%C3%B6chte%20den%20kostenlosen%20Sichtbarkeits-Check%20f%C3%BCr%20mein%20Unternehmen.">
+      <a class="btn btn-white" href="https://wa.me/491755702816?text=Hallo%2C%20ich%20m%C3%B6chte%20den%20kostenlosen%20Sichtbarkeits-Check%20f%C3%BCr%20mein%20Unternehmen.">
         Per WhatsApp anfragen
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
@@ -589,10 +594,14 @@
 
     <div class="cta-or"><span>oder direkt hier</span></div>
 
-    <!-- Kontaktformular: öffnet das E-Mail-Programm mit vorausgefüllter Nachricht, kein Backend nötig.
-         TODO: Falls gewünscht, später gegen echten Form-Handler (z. B. Formspree) austauschen –
-         dann reicht es, das onsubmit-Attribut zu entfernen und ein action="..." zu setzen. -->
     <form class="contact-form" id="kontaktformular" onsubmit="return sendeKontaktanfrage(event)">
+      <!-- Web3Forms -->
+      <input type="hidden" name="access_key" value="55d009c7-926d-4f4a-99e1-7c1875b3b6b1">
+      <input type="hidden" name="subject" value="Kostenloser Sichtbarkeits-Check – Anfrage über die Website">
+      <input type="hidden" name="from_name" value="dienstleistung.auffindbar">
+      <!-- Honeypot gegen Spam -->
+      <input type="checkbox" name="botcheck" style="display:none">
+
       <div class="form-row">
         <div class="form-field">
           <label for="cf-name">Name*</label>
@@ -613,11 +622,11 @@
         <label for="cf-nachricht">Nachricht</label>
         <textarea id="cf-nachricht" name="nachricht" rows="4" placeholder="Kurz zu Ihrem Unternehmen – ich melde mich mit den Befunden zurück."></textarea>
       </div>
-      <button type="submit" class="btn btn-white">
+      <button type="submit" class="btn btn-white" id="submit-btn">
         Anfrage senden
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </button>
-      <p class="form-note">Öffnet Ihr E-Mail-Programm mit einer vorausgefüllten Nachricht an mich.</p>
+      <p class="form-note" id="form-note">Ihre Nachricht wird direkt an mich gesendet – kein E-Mail-Programm nötig.</p>
     </form>
 
     <small>hallo@dienstleistung-auffindbar.de</small>
@@ -685,21 +694,22 @@
           <span class="logo-sub">SEO · Stuttgart &amp; Region</span>
         </span>
       </a>
+      <!-- TODO: Social-URLs durch echte Profile ersetzen -->
       <div class="foot-social" aria-label="Social-Media-Profile">
-        <a href="https://www.linkedin.com/company/136166220/" aria-label="LinkedIn" rel="me">
+        <a href="https://www.linkedin.com/company/dienstleistung-auffindbar/" aria-label="LinkedIn" rel="me">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
         </a>
         <a href="https://www.instagram.com/dienstleistung.auffindbar/" aria-label="Instagram" rel="me">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor" stroke="none"/></svg>
         </a>
-        <a href="https://www.facebook.com/profile.php?id=61591913520821" aria-label="Facebook" rel="me">
+        <a href="https://www.facebook.com/dienstleistung.auffindbar/" aria-label="Facebook" rel="me">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.54-1.5h1.66V3.6c-.29-.04-1.27-.12-2.42-.12-2.4 0-4.04 1.46-4.04 4.15v2.27H7.5V13h2.74v8h3.26z"/></svg>
         </a>
       </div>
     </div>
     <div class="foot-meta">
       <span>© 2026 dienstleistung.auffindbar · Franziska Marschall · Stuttgart &amp; Region</span>
-      <span><a href="/impressum.html">Impressum</a> · <a href="/datenschutz.html">Datenschutz</a></span>
+      <span><a href="/impressum/">Impressum</a> · <a href="/datenschutz/">Datenschutz</a></span>
     </div>
   </div>
 </footer>
@@ -710,22 +720,41 @@
   },{ threshold:.12 });
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-  function sendeKontaktanfrage(ev){
+  async function sendeKontaktanfrage(ev){
     ev.preventDefault();
     const f = ev.target;
-    const name = f.name.value.trim();
-    const email = f.email.value.trim();
-    const firma = f.firma.value.trim();
-    const nachricht = f.nachricht.value.trim();
-    const body = [
-      `Name: ${name}`,
-      `E-Mail: ${email}`,
-      firma ? `Unternehmen/Branche: ${firma}` : null,
-      '',
-      nachricht || '(keine Nachricht angegeben)'
-    ].filter(Boolean).join('\n');
-    const subject = 'Kostenloser Sichtbarkeits-Check – Anfrage über die Website';
-    window.location.href = `mailto:hallo@dienstleistung-auffindbar.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const btn = document.getElementById('submit-btn');
+    const note = document.getElementById('form-note');
+
+    btn.disabled = true;
+    btn.textContent = 'Wird gesendet …';
+
+    const data = new FormData(f);
+    const json = Object.fromEntries(data.entries());
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(json)
+      });
+      const result = await res.json();
+      if (result.success) {
+        f.reset();
+        note.textContent = 'Vielen Dank – ich melde mich in Kürze mit Ihren Befunden.';
+        note.style.color = '#fff';
+        note.style.fontWeight = '600';
+        btn.textContent = 'Gesendet ✓';
+      } else {
+        note.textContent = 'Es ist ein Fehler aufgetreten. Bitte schreiben Sie direkt an hallo@dienstleistung-auffindbar.de.';
+        btn.disabled = false;
+        btn.innerHTML = 'Erneut versuchen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
+      }
+    } catch(e) {
+      note.textContent = 'Verbindungsfehler. Bitte schreiben Sie direkt an hallo@dienstleistung-auffindbar.de.';
+      btn.disabled = false;
+      btn.innerHTML = 'Erneut versuchen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
+    }
     return false;
   }
 </script>
