@@ -92,4 +92,25 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://dienstleistung-auffindbar.de/blog/jameda-vor-praxis-ranking/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dienstleistung-auffindbar.de/blog/bewertungen-sammeln-schweigepflicht/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dienstleistung-auffindbar.de/blog/google-unternehmensprofil-fehler/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

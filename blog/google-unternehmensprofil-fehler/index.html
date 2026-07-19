@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- ===== SEO ===== -->
-<title>Blog: Wissen für lokale Sichtbarkeit | dienstleistung.auffindbar</title>
-<meta name="description" content="Artikel zu lokalem SEO, Google-Sichtbarkeit und KI-Suche für Kanzleien, Praxen, Makler und Umzugsunternehmen in Stuttgart & Region.">
-<link rel="canonical" href="https://dienstleistung-auffindbar.de/blog/">
+<title>10 häufige Fehler im Google-Unternehmensprofil (und die Lösung) | dienstleistung.auffindbar</title>
+<meta name="description" content="Die 10 häufigsten Fehler im Google-Unternehmensprofil von Dienstleistern – und wie Sie sie in wenigen Minuten beheben.">
+<link rel="canonical" href="https://dienstleistung-auffindbar.de/blog/google-unternehmensprofil-fehler/">
 <meta name="robots" content="index, follow">
 
 <!-- Open Graph / Social -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="dienstleistung.auffindbar">
-<meta property="og:title" content="Blog: Wissen für lokale Sichtbarkeit">
-<meta property="og:description" content="Artikel zu lokalem SEO, Google-Sichtbarkeit und KI-Suche für Dienstleister in Stuttgart & Region.">
-<meta property="og:url" content="https://dienstleistung-auffindbar.de/blog/">
+<meta property="og:title" content="10 häufige Fehler im Google-Unternehmensprofil (und die Lösung)">
+<meta property="og:description" content="Die 10 häufigsten Fehler im Google-Unternehmensprofil von Dienstleistern – und wie Sie sie in wenigen Minuten beheben.">
+<meta property="og:url" content="https://dienstleistung-auffindbar.de/blog/google-unternehmensprofil-fehler/">
 <!-- TODO: og:image ergänzen sobald Share-Bild (1200x630) vorliegt
 <meta property="og:image" content="https://dienstleistung-auffindbar.de/og-image.jpg"> -->
 
@@ -58,18 +58,18 @@
 }
 </script>
 
-<!-- ===== Strukturierte Daten: Blog ===== -->
+<!-- ===== Strukturierte Daten: Artikel ===== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "dienstleistung.auffindbar Blog",
-  "url": "https://dienstleistung-auffindbar.de/blog/",
-  "description": "Artikel zu lokalem SEO, Google-Sichtbarkeit und KI-Suche für Dienstleister in Stuttgart & Region.",
-  "publisher": {
-    "@type": "Person",
-    "name": "Franziska Marschall"
-  }
+  "@type": "Article",
+  "headline": "10 häufige Fehler im Google-Unternehmensprofil (und die Lösung)",
+  "description": "Die 10 häufigsten Fehler im Google-Unternehmensprofil von Dienstleistern – und wie Sie sie in wenigen Minuten beheben.",
+  "author": {"@type": "Person", "name": "Franziska Marschall"},
+  "publisher": {"@type": "Person", "name": "Franziska Marschall"},
+  "datePublished": "2026-07-19",
+  "dateModified": "2026-07-19",
+  "mainEntityOfPage": "https://dienstleistung-auffindbar.de/blog/google-unternehmensprofil-fehler/"
 }
 </script>
 
@@ -329,6 +329,17 @@
   .foot-social a{ color:var(--ink); display:flex; }
   .foot-social a:hover{ color:var(--ember); }
   .foot-social svg{ width:22px; height:22px; }
+  .blog-teaser{ padding:88px 0; }
+  .blog-teaser-box{
+    margin-top:36px; max-width:760px; padding:44px; border-radius:18px;
+    background:var(--fog);
+  }
+  .blog-teaser-box h2{ font-size:clamp(24px,3vw,32px); margin-bottom:16px; }
+  .blog-teaser-box p{ font-size:16px; color:var(--ink-60); margin-bottom:24px; }
+  .read-more-large{
+    display:inline-flex; font-size:15px; font-weight:600; color:var(--ember); text-decoration:none;
+  }
+  .read-more-large:hover{ text-decoration:underline; }
   .foot-pages{
     margin-top:28px; padding-top:20px; border-top:1px solid var(--rule);
     display:flex; flex-wrap:wrap; gap:8px 22px;
@@ -350,18 +361,24 @@
     html{ scroll-behavior:auto; }
   }
 
-  .blog-grid{ margin-top:56px; display:grid; grid-template-columns:repeat(2,1fr); gap:28px; }
-  .blog-card{
-    background:var(--paper); border:1px solid var(--rule); border-radius:16px;
-    padding:32px; text-decoration:none; color:var(--ink);
-    transition:border-color .2s, transform .2s; display:flex; flex-direction:column;
+  .article-wrap{ max-width:760px; }
+  .article-body{ font-size:17px; line-height:1.78; }
+  .article-body h2{ font-size:26px; margin:48px 0 16px; letter-spacing:-0.02em; font-weight:700; }
+  .article-body p{ margin-bottom:20px; }
+  .article-body ul, .article-body ol{ margin:0 0 20px 24px; }
+  .article-body li{ margin-bottom:10px; }
+  .article-body strong{ font-weight:600; }
+  .article-body blockquote{
+    border-left:3px solid var(--ember); margin:0 0 20px; padding:4px 0 4px 24px;
+    font-style:italic; color:var(--ink-60);
   }
-  .blog-card:hover{ border-color:var(--ember); transform:translateY(-3px); }
-  .blog-meta{ font-size:12.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--ember); margin-bottom:14px; }
-  .blog-card h3{ font-size:21px; font-weight:700; letter-spacing:-0.01em; margin-bottom:10px; line-height:1.3; }
-  .blog-card p{ font-size:15px; color:var(--ink-60); flex:1; }
-  .blog-card .read-more{ margin-top:18px; font-size:13.5px; font-weight:600; color:var(--ember); }
-  @media(max-width:760px){ .blog-grid{ grid-template-columns:1fr; } }
+  .article-meta{ font-size:13.5px; color:var(--ink-60); margin-bottom:8px; }
+  .disclaimer{
+    margin-top:40px; padding:20px 24px; background:var(--fog);
+    border-radius:10px; font-size:14px; color:var(--ink-60);
+  }
+  .back-link{ display:inline-block; margin-top:32px; font-size:14px; font-weight:600; color:var(--ember); text-decoration:none; }
+  .blog-meta{ font-size:12.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--ember); margin-bottom:14px; display:block; }
 </style>
 </head>
 <body>
@@ -402,53 +419,71 @@
 </header>
 
 <main>
-
-<section style="padding:72px 0 64px;">
-  <div class="wrap">
-    <span class="label reveal">Blog</span>
-    <h1 style="max-width:820px;">Wissen für Ihre lokale Sichtbarkeit.</h1>
-    <p class="hero-sub reveal" style="max-width:640px;">Artikel zu Google-Sichtbarkeit, Bewertungen, KI-Suche und den Fallstricken, die Dienstleistern in Stuttgart & Region täglich Anfragen kosten.</p>
+<section style="padding:72px 0 24px;">
+  <div class="wrap article-wrap">
+    <a class="back-link" href="/blog/" style="margin-bottom:24px; display:inline-block;">← Blog</a>
+    <span class="blog-meta reveal">Bei Google gefunden werden · Alle Branchen</span>
+    <h1 class="reveal" style="max-width:none; margin-bottom:10px;">Die 10 häufigsten Fehler im Google-Unternehmensprofil von Dienstleistern</h1>
+    <p class="article-meta reveal">Veröffentlicht am 19. Juli 2026 · 4 Min Lesezeit</p>
   </div>
 </section>
 
-<section class="section-fog" aria-label="Alle Artikel">
-  <div class="wrap">
-    <div class="blog-grid reveal">
+<section aria-label="Artikel" style="padding:0 0 80px;">
+  <div class="wrap article-wrap">
+    <div class="article-body reveal">
 
-      <a class="blog-card" href="/blog/jameda-vor-praxis-ranking/">
-        <span class="blog-meta">Bei Google gefunden werden · 5 Min Lesezeit</span>
-        <h3>Warum Jameda vor Ihrer Praxis-Website rankt – und was Sie dagegen tun können</h3>
-        <p>Domain-Autorität, Bewertungsdichte, strukturierte Daten: Warum Portale bei Google gewinnen – und in 5 Schritten, wie Sie neben ihnen sichtbar werden.</p>
-        <span class="read-more">Artikel lesen →</span>
-      </a>
+      <p>Das Google-Unternehmensprofil ist die einzige Stelle, an der Google Ihre eigenen Daten direkt anzeigt – nicht die eines Portals, nicht die eines Verzeichnisses. Trotzdem bleibt bei den meisten Profilen ein erheblicher Teil des Potenzials ungenutzt. Diese zehn Fehler sind die häufigsten – und alle in wenigen Minuten behebbar.</p>
 
-      <a class="blog-card" href="/blog/bewertungen-sammeln-schweigepflicht/">
-        <span class="blog-meta">Bewertungen · 6 Min Lesezeit</span>
-        <h3>Bewertungen sammeln trotz Schweigepflicht: So geht's für Anwälte, Zahnärzte und Therapeuten</h3>
-        <p>Die Schweigepflicht verbietet nicht das Bitten um eine Bewertung – sie verbietet den Fallbezug. Was das konkret bedeutet, mit Musterformulierung.</p>
-        <span class="read-more">Artikel lesen →</span>
-      </a>
+      <h2>1. Die Kategorie ist zu allgemein oder falsch gewählt</h2>
+      <p>„Beratung" statt „Rechtsanwaltskanzlei", „Gesundheit" statt „Physiotherapeut" – eine zu allgemeine Hauptkategorie sorgt dafür, dass Google das Profil nicht für die passenden Suchanfragen ausspielt. Die Hauptkategorie sollte so präzise wie möglich der tatsächlichen Tätigkeit entsprechen, ergänzende Kategorien decken Nebenleistungen ab.</p>
 
-      <a class="blog-card" href="/blog/google-unternehmensprofil-fehler/">
-        <span class="blog-meta">Google-Profil · 4 Min Lesezeit</span>
-        <h3>Die 10 häufigsten Fehler im Google-Unternehmensprofil von Dienstleistern</h3>
-        <p>Falsche Kategorie, veraltete Zeiten, leere Leistungsliste – diese zehn Fehler kosten täglich Anfragen. Und alle sind in unter 30 Minuten behebbar.</p>
-        <span class="read-more">Artikel lesen →</span>
-      </a>
+      <h2>2. Öffnungszeiten sind unvollständig oder veraltet</h2>
+      <p>Fehlende Feiertagszeiten oder falsche Zeiten an einzelnen Wochentagen führen dazu, dass potenzielle Kundschaft vor verschlossener Tür steht – und Google bewertet Inkonsistenzen als Vertrauenssignal negativ.</p>
 
-      <a class="blog-card" href="/blog/vermittlungsportale-lead-gebuehren-kosten/">
-        <span class="blog-meta">Kosten &amp; Portale · 6 Min Lesezeit</span>
-        <h3>Vermittlungsportale, Lead-Gebühren, 12-Monats-Verträge: Was Sie wirklich kostet, wenn Sie nicht selbst gefunden werden</h3>
-        <p>Jameda, anwalt.de, ImmoScout & Co. verkaufen Kontakte, die eigentlich Sie gesucht haben. Eine ehrliche Rechnung – und was die Alternative bringt.</p>
-        <span class="read-more">Artikel lesen →</span>
-      </a>
+      <h2>3. Weniger als 5 Fotos hinterlegt</h2>
+      <p>Profile mit wenigen oder keinen Fotos wirken für Google und für Suchende gleichermaßen unvollständig. Räumlichkeiten, Team, Empfangsbereich – schon einfache Handyfotos verbessern die Wahrnehmung spürbar.</p>
 
+      <h2>4. Die Adresse stimmt nicht exakt mit der Website überein</h2>
+      <p>Wenn auf der Website „Musterstraße 12" steht und im Google-Profil „Musterstr. 12", ist das für Menschen unwichtig, für Google jedoch ein Konsistenz-Signal, das geschwächt wird. Name, Adresse und Telefonnummer sollten überall identisch formatiert sein.</p>
+
+      <h2>5. Keine Beiträge werden veröffentlicht</h2>
+      <p>Ein Google-Profil ohne aktuelle Beiträge wirkt inaktiv. Regelmäßige, kurze Beiträge – auch nur alle paar Wochen – signalisieren Google, dass hinter dem Profil ein aktives Unternehmen steht.</p>
+
+      <h2>6. Bewertungen bleiben unbeantwortet</h2>
+      <p>Unbeantwortete Bewertungen, positiv wie negativ, wirken auf Suchende wie mangelndes Engagement. Eine kurze, sachliche Antwort reicht – wichtig ist, dass überhaupt reagiert wird.</p>
+
+      <h2>7. Die Leistungsliste ist leer oder pauschal</h2>
+      <p>Ein einzelner Eintrag wie „Beratung" statt einer Auflistung konkreter Einzelleistungen verschenkt Sichtbarkeit für spezifische Suchanfragen, bei denen genau diese Leistung gesucht wird.</p>
+
+      <h2>8. Der Unternehmensname enthält unzulässige Zusätze</h2>
+      <p>Zusätze wie Orts- oder Leistungsbeschreibungen im Namensfeld verstoßen gegen die Richtlinien von Google und können zur Abwertung oder Sperrung des Profils führen.</p>
+
+      <h2>9. Der Standort auf der Karte stimmt nicht exakt</h2>
+      <p>Ein falsch gesetzter Kartenpunkt sorgt für falsche Routenplanung – ein direkter, vermeidbarer Grund für ausbleibende Anfragen trotz vorhandener Sichtbarkeit.</p>
+
+      <h2>10. Fragen & Antworten werden ignoriert</h2>
+      <p>Der Frage-Antwort-Bereich im Profil ist öffentlich einsehbar und wird von Google in der Suche mit angezeigt. Unbeantwortete oder von Dritten falsch beantwortete Fragen bleiben dauerhaft sichtbar, wenn niemand sie korrigiert.</p>
+
+      <h2>Die gute Nachricht</h2>
+      <p>Keiner dieser zehn Punkte erfordert technisches Wissen oder laufendes Budget. Die meisten lassen sich in insgesamt weniger als 30 Minuten beheben – und wirken danach dauerhaft weiter.</p>
+
+      <h2>Häufige Fragen</h2>
+      <p><strong>Wie finde ich heraus, welche dieser Fehler bei mir vorliegen?</strong><br>
+      Das eigene Google-Unternehmensprofil über Google Maps aufrufen und jeden der zehn Punkte einzeln durchgehen – oder den kostenlosen Sichtbarkeits-Check nutzen.</p>
+      <p><strong>Wie oft sollte ich das Profil kontrollieren?</strong><br>
+      Ein kurzer Check alle paar Monate reicht, um Veränderungen wie neue Öffnungszeiten oder veraltete Fotos rechtzeitig zu bemerken.</p>
+      <p><strong>Wirkt sich jeder dieser Fehler gleich stark aus?</strong><br>
+      Nein. Kategorie, Konsistenz von Name/Adresse/Telefonnummer und Bewertungsmanagement wirken sich in der Regel am stärksten auf die Sichtbarkeit aus.</p>
+      <p><strong>Kostet die Behebung dieser Fehler etwas?</strong><br>
+      Nein, alle zehn Punkte lassen sich direkt im kostenlosen Google-Unternehmensprofil selbst beheben.</p>
+
+
+      <a class="back-link" href="/blog/">← Zurück zum Blog</a>
     </div>
   </div>
 </section>
 
-</main>
-<!-- ============ CTA ============ -->
+</main><!-- ============ CTA ============ -->
 <section id="check" class="cta" aria-label="Kostenloser Sichtbarkeits-Check">
   <div class="wrap">
     <span class="label">Kostenlos &amp; unverbindlich</span>
