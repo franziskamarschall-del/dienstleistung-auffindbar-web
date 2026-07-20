@@ -806,22 +806,40 @@
   },{ threshold:.12 });
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-  function sendeKontaktanfrage(ev){
+  async function sendeKontaktanfrage(ev){
     ev.preventDefault();
     const f = ev.target;
-    const name = f.name.value.trim();
-    const email = f.email.value.trim();
-    const firma = f.firma.value.trim();
-    const nachricht = f.nachricht.value.trim();
-    const body = [
-      `Name: ${name}`,
-      `E-Mail: ${email}`,
-      firma ? `Unternehmen/Branche: ${firma}` : null,
-      '',
-      nachricht || '(keine Nachricht angegeben)'
-    ].filter(Boolean).join('\n');
-    const subject = 'Kostenloser Sichtbarkeits-Check – Anfrage über die Website';
-    window.location.href = `mailto:hallo@dienstleistung-auffindbar.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const btn = document.getElementById('submit-btn');
+    const note = document.getElementById('form-note');
+
+    btn.disabled = true;
+    btn.textContent = 'Wird gesendet …';
+
+    const data = new FormData(f);
+    const json = Object.fromEntries(data.entries());
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(json)
+      });
+      const result = await res.json();
+      if (result.success) {
+        window.location.href = '/danke/';
+        return false;
+      } else {
+        note.style.display = 'block';
+        note.textContent = 'Es ist ein Fehler aufgetreten. Bitte schreiben Sie direkt an hallo@dienstleistung-auffindbar.de.';
+        btn.disabled = false;
+        btn.innerHTML = 'Erneut versuchen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
+      }
+    } catch(e) {
+      note.style.display = 'block';
+      note.textContent = 'Verbindungsfehler. Bitte schreiben Sie direkt an hallo@dienstleistung-auffindbar.de.';
+      btn.disabled = false;
+      btn.innerHTML = 'Erneut versuchen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
+    }
     return false;
   }
 </script>
