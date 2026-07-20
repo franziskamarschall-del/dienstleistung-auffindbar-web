@@ -826,8 +826,12 @@
       });
       const result = await res.json();
       if (result.success) {
-        window.location.href = '/danke/';
-        return false;
+        f.reset();
+        note.style.display = 'block';
+        note.style.color = '#fff';
+        note.style.fontWeight = '600';
+        note.textContent = 'Vielen Dank – ich melde mich in Kürze mit Ihren Befunden.';
+        btn.textContent = 'Gesendet ✓';
       } else {
         note.style.display = 'block';
         note.textContent = 'Es ist ein Fehler aufgetreten. Bitte schreiben Sie direkt an hallo@dienstleistung-auffindbar.de.';
