@@ -817,6 +817,7 @@
 
     const data = new FormData(f);
     const json = Object.fromEntries(data.entries());
+    json.subject = `Sichtbarkeits-Check – Anfrage von ${json.name || 'Website'}`;
 
     try {
       const res = await fetch('https://api.web3forms.com/submit', {
