@@ -3,7 +3,7 @@
 
   <url>
     <loc>https://dienstleistung-auffindbar.de/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -80,7 +80,7 @@
 
   <url>
     <loc>https://dienstleistung-auffindbar.de/blog/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -110,6 +110,55 @@
     <loc>https://dienstleistung-auffindbar.de/blog/google-unternehmensprofil-fehler/</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dienstleistung-auffindbar.de/blog/schoene-website-keine-anfragen/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dienstleistung-auffindbar.de/blog/seitentitel-leistung-ort/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dienstleistung-auffindbar.de/blog/online-termin-whatsapp-formular/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dienstleistung-auffindbar.de/blog/preise-auf-website-nennen/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dienstleistung-auffindbar.de/blog/laden-mit-onlineshop-lokal-gefunden/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dienstleistung-auffindbar.de/blog/google-bewertungen-bekommen/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dienstleistung-auffindbar.de/blog/chatgpt-empfehlung-pruefen/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 

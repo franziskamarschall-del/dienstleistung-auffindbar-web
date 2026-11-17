@@ -19,6 +19,19 @@ Ganz Deutschland, alles schriftlich. Sitz in der Region Stuttgart.
 - [KI-Suche](https://dienstleistung-auffindbar.de/ki-sichtbarkeit-dienstleister/): Wie ChatGPT & Co. Betriebe empfehlen
 - [Blog](https://dienstleistung-auffindbar.de/blog/): Artikel zu Google-Sichtbarkeit und Anfragen
 
+## Blog-Artikel
+- [Schöne Website, aber keine Anfragen? Die 7 häufigsten Gründe](https://dienstleistung-auffindbar.de/blog/schoene-website-keine-anfragen/): Deine Website sieht gut aus, aber kaum jemand fragt an? Die 7 häufigsten Gründe bei Dienstleistern und Läden – und was du heute schon ändern kannst.
+- [Seitentitel richtig schreiben: So versteht Google, was du anbietest und wo](https://dienstleistung-auffindbar.de/blog/seitentitel-leistung-ort/): Der Seitentitel ist die blaue Zeile bei Google. So schreibst du ihn für jede Seite richtig – mit Leistung und Ort, Beispielen und den häufigsten Fehlern.
+- [Online-Termin, WhatsApp oder Formular: Was bringt mehr Anfragen?](https://dienstleistung-auffindbar.de/blog/online-termin-whatsapp-formular/): Telefon, WhatsApp, Formular oder Online-Terminbuchung: Welcher Weg bringt Dienstleistern und Läden mehr Anfragen? Vor- und Nachteile und eine klare Empfehlung.
+- [Preise auf der Website nennen – ja oder nein?](https://dienstleistung-auffindbar.de/blog/preise-auf-website-nennen/): Sollen Dienstleister ihre Preise auf der Website zeigen? Was dafür spricht, was dagegen, und wie du Preise nennst, auch wenn jedes Angebot anders ist.
+- [Laden mit Onlineshop: So findet man dich vor Ort und online](https://dienstleistung-auffindbar.de/blog/laden-mit-onlineshop-lokal-gefunden/): Du hast einen Laden und einen Onlineshop? So sorgst du dafür, dass Menschen in deiner Region dich bei Google finden – und nicht nur die großen Shops.
+- [Google-Bewertungen bekommen, ohne zu nerven](https://dienstleistung-auffindbar.de/blog/google-bewertungen-bekommen/): So bekommst du mehr echte Google-Bewertungen: der richtige Moment, fertige Formulierungen, ein direkter Link – und was Google ausdrücklich verbietet.
+- [Wen empfiehlt ChatGPT? So prüfst du in 2 Minuten, ob du in der KI-Suche vorkommst](https://dienstleistung-auffindbar.de/blog/chatgpt-empfehlung-pruefen/): Immer mehr Menschen fragen ChatGPT & Co. nach Empfehlungen. So prüfst du in 2 Minuten, ob dein Betrieb genannt wird – und was du tun kannst, wenn nicht.
+- [Was Vermittlungsportale und Lead-Gebühren wirklich kosten](https://dienstleistung-auffindbar.de/blog/vermittlungsportale-lead-gebuehren-kosten/)
+- [Warum Portale vor der eigenen Website stehen](https://dienstleistung-auffindbar.de/blog/jameda-vor-praxis-ranking/)
+- [Bewertungen sammeln trotz Schweigepflicht](https://dienstleistung-auffindbar.de/blog/bewertungen-sammeln-schweigepflicht/)
+- [Die 10 häufigsten Fehler im Google-Unternehmensprofil](https://dienstleistung-auffindbar.de/blog/google-unternehmensprofil-fehler/)
+
 ## Kontakt
 Website: https://dienstleistung-auffindbar.de
 E-Mail: hallo@dienstleistung-auffindbar.de
